@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Dating 2026 - Orange Digital Center</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- Google Font alternative (Helvetica Neue not web safe) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-black">
+
+  <!-- NAVBAR -->
+  <nav class="bg-black text-white px-6 py-4 sticky top-0 z-50">
+    <div class="flex justify-between items-center">
+
+      <div class="flex items-center gap-3">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Orange_logo.svg" class="h-10" />
+        <div class="leading-tight">
+          <p class="font-bold">Orange</p>
+          <p class="font-bold">Digital Center</p>
+        </div>
+      </div>
+
+      <div class="hidden md:flex gap-8 items-center">
+        <a href="#profiles" class="hover:text-[#F16E00] font-bold">Profils</a>
+        <a href="#process" class="hover:text-[#F16E00] font-bold">Processus</a>
+        <a href="#infos" class="hover:text-[#F16E00] font-bold">Infos</a>
+        <a href="#about" class="hover:text-[#F16E00] font-bold">A propos</a>
+      </div>
+
+      <button id="menu-btn" class="md:hidden">
+        ☰
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden flex flex-col gap-4 mt-4 md:hidden">
+      <a href="#profiles" class="hover:text-[#F16E00] font-bold">Profils</a>
+      <a href="#process" class="hover:text-[#F16E00] font-bold">Processus</a>
+      <a href="#infos" class="hover:text-[#F16E00] font-bold">Infos</a>
+      <a href="#about" class="hover:text-[#F16E00] font-bold">A propos</a>
+    </div>
+  </nav>
+
+  <!-- HERO FULL SCREEN -->
+  <section
+    class="relative min-h-[calc(100vh-80px)] flex flex-col md:flex-row items-center bg-[#F8F8F8] px-6 md:px-16 overflow-hidden">
+    <svg class="hidden md:block absolute top-0 right-0 w-[120%] h-[120%] z-0" viewBox="0 0 1000 1000" preserveAspectRatio="none">
+
+      <defs>
+        <linearGradient id="orangeGradient" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#F16E00" stop-opacity="0.25" />
+          <stop offset="100%" stop-color="#F16E00" stop-opacity="0.05" />
+        </linearGradient>
+      </defs>
+
+      <path d="
+  M1000 0
+  L200 1000
+  L1000 1000
+  Z
+" fill="url(#orangeGradient)" />
+    </svg>
+    <div class="flex-1 space-y-6 relative z-10" data-aos="fade-up">
+      <p class="text-gray-600 text-3xl font-bold">
+        Participez au Job Dating d'Orange Digital Center Rabat et Agadir
+      </p>
+
+      <h1 class="text-5xl md:text-7xl font-bold">
+        Job Dating <span class="text-[#F16E00]">2026</span>
+      </h1>
+
+      <p class="max-w-xl font-bold">
+        Découvrez des développeurs passionnés, formés au bootcamp fullstack, et construisez dès aujourd’hui la vision
+        numérique de demain — main dans la main avec des talents prêts à faire la différence.
+      </p>
+
+      <div class="flex gap-4">
+        <button class="border border-black px-6 py-3 hover:bg-black hover:text-white font-bold transition">
+          Découvrir
+        </button>
+
+        <a href="#" class="bg-[#F16E00] px-6 py-3 text-white font-bold hover:opacity-90 transition">
+          Participer au Job Dating
+        </a>
+      </div>
+    </div>
+    <div class="flex-1 h-full relative z-10 mt-10 md:mt-0" data-aos="fade-left">
+      <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df"
+        class="w-full h-full object-cover rounded-lg" />
+      <div class="absolute bottom-6 left-6 bg-black text-white px-6 py-4 rounded">
+        <p class="text-xs">Début dans</p>
+        <div id="countdown" class="text-xl font-bold"></div>
+      </div>
+    </div>
+
+  </section>
+  <!-- POURQUOI -->
+  <section class="px-6 md:px-16 py-20">
+    <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center" data-aos="fade-up">Pourquoi participer ?</h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <div class="border p-8 hover:bg-black hover:text-white hover:scale-105 transition duration-300"
+        data-aos="fade-up">
+        <h3 class="text-xl font-bold mb-3 text-[#F16E00]">Profils qualifiés</h3>
+        <p class="font-bold">
+          Accédez à des développeurs formés intensivement, maîtrisant les technologies les plus demandées du marché
+          et immédiatement opérationnels sur vos projets.
+        </p>
+      </div>
+
+      <div class="border p-8 hover:bg-black hover:text-white hover:scale-105 transition duration-300" data-aos="fade-up"
+        data-aos-delay="100">
+        <h3 class="text-xl font-bold mb-3 text-[#F16E00]">Rencontre directe</h3>
+        <p class="font-bold">
+          Échangez en face à face avec les candidats lors d’entretiens courts et ciblés,
+          pour évaluer rapidement leur potentiel technique et humain.
+        </p>
+      </div>
+
+      <div class="border p-8 hover:bg-black hover:text-white hover:scale-105 transition duration-300" data-aos="fade-up"
+        data-aos-delay="200">
+        <h3 class="text-xl font-bold mb-3 text-[#F16E00]">Recrutement rapide</h3>
+        <p class="font-bold">
+          Accélérez votre processus de recrutement en identifiant en une journée
+          les profils les plus adaptés à vos besoins.
+        </p>
+      </div>
+
+    </div>
+  </section>
+  <!-- PROCESS -->
+  <section id="process" class="bg-[#F8F8F8] px-6 md:px-16 py-20">
+    <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center" data-aos="fade-up">Comment ça marche ?</h2>
+
+    <div class="grid md:grid-cols-3 gap-8 text-center">
+      <div class="p-6" data-aos="fade-up">
+        <p class="text-[#F16E00] text-4xl font-bold">01</p>
+        <h3 class="font-bold text-xl">Inscription</h3>
+        <p class="text-gray-600 font-bold">Réservez votre place et définissez vos besoins.</p>
+      </div>
+
+      <div class="p-6" data-aos="fade-up">
+        <p class="text-[#F16E00] text-4xl font-bold">02</p>
+        <h3 class="font-bold text-xl">Rencontres</h3>
+        <p class="text-gray-600 font-bold ">Échangez avec des talents qualifiés.</p>
+      </div>
+
+      <div class="p-6">
+        <p class="text-[#F16E00] text-4xl font-bold">03</p>
+        <h3 class="font-bold text-xl">Recrutement</h3>
+        <p class="text-gray-600 font-bold">Identifiez rapidement les meilleurs profils.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROFILS SECTION VERSION FAQ PREMIUM -->
+  <section id="profiles" class="px-6 md:px-16 py-20">
+    <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center" data-aos="fade-up">Profils disponibles</h2>
+
+    <!-- Intro -->
+    <p class="mb-10 text-gray-600 leading-relaxed font-bold" data-aos="fade-up">
+      Nos développeurs incarnent une vision moderne de l’ingénierie logicielle. Grâce à une formation intensive,
+      ils maîtrisent tout le cycle de vie d’un projet, de la conception à la mise en production, avec une approche
+      agile,
+      collaborative et orientée valeur.
+    </p>
+    <!-- FAQ Accordion -->
+    <div class="space-y-4" data-aos="fade-up">
+      <!-- ITEM -->
+      <div class="border border-gray-300">
+        <button class="w-full flex justify-between items-center p-6 font-bold text-left faq-btn">
+          Gestion de projet
+          <span>+</span>
+        </button>
+        <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 px-6">
+          <p class="py-4 text-gray-600 text-sm font-bold">
+            Formés aux méthodologies agiles (Scrum), nos développeurs savent structurer, piloter et livrer des projets
+            efficacement.
+            Ils utilisent Jira pour organiser les sprints, suivre l’avancement et prioriser les tâches avec précision.
+            Résultat : une collaboration fluide, une meilleure visibilité et des livraisons continues à forte valeur
+            ajoutée.
+          </p>
+          <div class="flex flex-wrap gap-2 pb-4">
+            <span class="border  border-[#F16E00] text-[#F16E00] px-3 py-1 text-sm  ">Scrum</span>
+            <span class="border  border-[#F16E00] text-[#F16E00]  px-3 py-1 text-sm">Jira</span>
+            <span class="border  border-[#F16E00] text-[#F16E00]  px-3 py-1 text-sm">Agile</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="border border-gray-300">
+        <button class="w-full flex justify-between items-center p-6 font-bold text-left faq-btn">
+          Frontend
+          <span>+</span>
+        </button>
+        <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 px-6">
+          <p class="py-4 text-gray-600 text-sm font-bold">
+            Experts en création d’interfaces modernes et intuitives, ils maîtrisent HTML, CSS, Tailwind, JavaScript,
+            TypeScript,
+            ainsi que des frameworks puissants comme React et Angular.
+            Leur objectif : offrir des expériences utilisateurs fluides, rapides et engageantes.
+          </p>
+          <div class="flex flex-wrap gap-2 pb-4">
+            <span class="border  border-[#F16E00] text-[#F16E00]  px-3 py-1 text-sm">React</span>
+            <span class="border  border-[#F16E00] text-[#F16E00]  px-3 py-1 text-sm">Angular</span>
+            <span class="border  border-[#F16E00] text-[#F16E00]  px-3 py-1 text-sm">Tailwind</span>
+            <span class="border  border-[#F16E00] text-[#F16E00]  px-3 py-1 text-sm">TypeScript</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="border border-gray-300">
+        <button class="w-full flex justify-between items-center p-6 font-bold text-left faq-btn">
+          Backend
+          <span>+</span>
+        </button>
+        <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 px-6">
+          <p class="py-4 text-gray-600 text-sm font-bold">
+            Avec Node.js et Express.js, ils conçoivent des architectures solides et des API performantes.
+            Leur approche garantit des applications sécurisées, maintenables et capables de monter en charge.
+          </p>
+          <div class="flex flex-wrap gap-2 pb-4">
+            <span class="border  border-[#F16E00] text-[#F16E00]  px-3 py-1 text-sm">Node.js</span>
+            <span class="border  border-[#F16E00] text-[#F16E00]  px-3 py-1 text-sm">Express</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="border border-gray-300">
+        <button class="w-full flex justify-between items-center p-6 font-bold text-left faq-btn">
+          DevOps & Cloud
+          <span>+</span>
+        </button>
+        <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 px-6">
+          <p class="py-4 text-gray-600 text-sm font-bold">
+            À l’aise avec Git et GitHub pour la gestion de version, ainsi qu’avec AWS et Docker,
+            ils assurent des déploiements fiables et une infrastructure scalable.
+            Ils comprennent les enjeux de performance, d’automatisation et de mise en production continue. </p>
+          <div class="flex flex-wrap gap-2 pb-4">
+            <span class="border  border-[#F16E00] text-[#F16E00]  px-3 py-1 text-sm">AWS</span>
+            <span class="border  border-[#F16E00] text-[#F16E00]  px-3 py-1 text-sm">Docker</span>
+            <span class="border  border-[#F16E00] text-[#F16E00]  px-3 py-1 text-sm">Git</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="border border-gray-300">
+        <button class="w-full flex justify-between items-center p-6 font-bold text-left faq-btn">
+          Soft Skills
+          <span>+</span>
+        </button>
+        <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 px-6">
+          <p class="py-4 text-gray-600 text-sm font-bold">
+            Au-delà de la technique, nos talents se distinguent par leur communication, leur esprit d’équipe et leur
+            capacité d’adaptation.
+            Proactifs et force de proposition, ils prennent des initiatives et contribuent activement à l’innovation au
+            sein des équipes. </p>
+          <div class="flex flex-wrap gap-2 pb-4">
+            <span class="border  border-[#F16E00] text-[#F16E00]  px-3 py-1 text-sm">Communication</span>
+            <span class="border  border-[#F16E00] text-[#F16E00]  px-3 py-1 text-sm">Teamwork</span>
+            <span class="border  border-[#F16E00] text-[#F16E00]  px-3 py-1 text-sm">Adaptabilité</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INFOS -->
+  <section id="infos" class="px-6 md:px-16 py-20 bg-[#F8F8F8]" >
+    <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center" data-aos="fade-up">
+      Prêt à rencontrer vos futurs talents ?
+    </h2>
+
+    <p class="mb-10 text-gray-600 font-bold">
+      Ne manquez pas cette opportunité unique de connecter avec des développeurs qualifiés et motivés.
+      Venez échanger, découvrir des profils à fort potentiel et donner un nouvel élan à vos projets.
+      <span class="text-[#F16E00] font-semibold">On vous donne rendez-vous !</span>
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <!-- Date & heure -->
+      <div class="border border-[#F16E00] p-6">
+
+        <!-- Date -->
+        <div class="flex items-center gap-3 mb-3">
+          <svg class="w-5 h-5 text-[#F16E00]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <rect x="3" y="4" width="18" height="18" rx="0" ry="0"></rect>
+            <line x1="16" y1="2" x2="16" y2="6"></line>
+            <line x1="8" y1="2" x2="8" y2="6"></line>
+            <line x1="3" y1="10" x2="21" y2="10"></line>
+          </svg>
+          <p class="font-bold text-[#F16E00] text-lg">17 Avril 2026</p>
+        </div>
+
+        <!-- Heure -->
+        <div class="flex items-center gap-3 mb-2">
+          <svg class="w-5 h-5 text-black" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="9"></circle>
+            <line x1="12" y1="7" x2="12" y2="12"></line>
+            <line x1="12" y1="12" x2="16" y2="14"></line>
+          </svg>
+          <p>09h - 18h</p>
+        </div>
+
+        <p class="text-gray-600">Format : Présentiel</p>
+
+        <p class="mt-4 font-semibold">
+          Réservez votre place dès maintenant et venez rencontrer nos talents en direct.
+        </p>
+
+        <a href="https://www.google.com"
+          class="inline-block mt-4 bg-[#F16E00] text-white px-6 py-3 hover:scale-105 transition">
+          Participer
+        </a>
+      </div>
+
+      <!-- Lieux -->
+      <div class="border border-[#F16E00] p-6">
+
+        <!-- Title -->
+        <div class="flex items-center gap-3 mb-4">
+          <svg class="w-5 h-5 text-[#F16E00]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M12 21s-6-5.5-6-10a6 6 0 1 1 12 0c0 4.5-6 10-6 10z"></path>
+            <circle cx="12" cy="11" r="2"></circle>
+          </svg>
+          <p class="font-bold text-[#F16E00] text-lg">Nos lieux de rencontre</p>
+        </div>
+
+        <!-- Rabat -->
+        <div class="mb-4">
+          <p class="font-semibold">Orange Digital Center Rabat</p>
+          <p class="text-sm text-gray-600">Avenue Annakhil, Hay Riad, Rabat, Maroc.</p>
+        </div>
+
+        <!-- Agadir -->
+        <div>
+          <p class="font-semibold">Orange Digital Center Agadir</p>
+          <p class="text-sm text-gray-600">4ème étage, Bureau TA403, Technopark Agadir, Agadir 80000, Maroc.</p>
+        </div>
+
+        <p class="mt-4 text-gray-600 font-bold">
+          Choisissez votre ville et vivez une expérience immersive au cœur de l’innovation.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+<!-- PARTENAIRES -->
+<section class="px-6 md:px-16 py-20 text-center">
+  <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center" data-aos="fade-up">Partenaires</h2>
+
+  <p class="mb-12 text-gray-600 max-w-3xl mx-auto">
+    Ce job dating est organisé dans le cadre du programme <span class="font-semibold text-black">JobInTech</span>,
+    opéré par <span class="font-semibold">Maroc Numeric Cluster</span>, soutenu par le
+    <span class="font-semibold">Ministère de la Transition Numérique et de la Réforme de l’Administration</span>,
+    et en partenariat avec <span class="font-semibold">CDG</span>.
+  </p>
+
+  <div class="grid md:grid-cols-3 gap-10 items-center">
+
+  <div class="flex flex-col items-center">
+    <img src="assets/mtnra.png" class="h-20 object-contain" />
+    <p class="text-sm mt-3">Ministère de la Transition Numérique et de la Réforme de l'Administration</p>
+  </div>
+
+  <div class="flex flex-col items-center">
+    <img src="assets/cdg.png" class="h-16 object-contain" />
+    <p class="text-sm mt-3">Caisse de Dépôt et de Gestion</p>
+  </div>
+
+  <div class="flex flex-col items-center">
+    <img src="assets/mnc.png" class="h-16 object-contain" />
+    <p class="text-sm mt-3">Maroc Numeric Cluster</p>
+  </div>
+
+</div>
+</section>
+ 
+  <!-- About -->
+  <section id="about" class="bg-black text-white px-6 md:px-16 py-20" data-aos="fade-up">
+    <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center" data-aos="fade-up">À propos</h2>
+
+    <p class="text-gray-300 leading-relaxed font-bold">
+      Orange Digital Center est une initiative d’Orange Maroc dédiée à l’inclusion numérique et à l’employabilité des
+      jeunes.
+      À travers des formations intensives et des programmes innovants, le centre accompagne les talents vers les métiers
+      du digital
+      en leur offrant des compétences techniques solides et une véritable expérience terrain.
+    </p>
+
+    <p class="text-gray-300 leading-relaxed mt-6 font-bold">
+      Ce job dating s’inscrit dans une démarche post-formation, visant à créer un pont concret entre les entreprises et
+      les développeurs formés.
+      Il offre un espace de rencontre privilégié pour identifier des profils qualifiés, échanger directement avec les
+      talents
+      et accélérer les opportunités de recrutement.
+    </p>
+
+    <p class="text-gray-300 leading-relaxed mt-6 font-bold">
+      Plus qu’un simple événement, il s’agit d’un véritable levier pour connecter les compétences aux besoins du marché
+      et contribuer activement à l’écosystème numérique au Maroc.
+    </p>
+  </section>
+  <!-- FOOTER -->
+  <footer id="contact" class="bg-black text-white px-6 md:px-16 py-16">
+
+  <div class="grid md:grid-cols-4 gap-10">
+
+    <!-- Logo + description -->
+    <div>
+      <p class="font-bold text-lg mb-3">Orange Digital Center</p>
+      <p class="text-sm text-gray-400">
+        Un réseau dédié à la formation et à l’accompagnement des talents du numérique au Maroc.
+      </p>
+    </div>
+
+    <!-- Adresses -->
+    <div>
+      <p class="font-bold mb-4">Nos centres</p>
+
+      <div class="space-y-3 text-sm text-gray-300">
+
+        <div>
+          <p class="font-semibold text-white">Rabat</p>
+          <p>Avenue Annakhil, Hay Riad, Rabat, Maroc</p>
+        </div>
+
+        <div>
+          <p class="font-semibold text-white">Agadir</p>
+          <p>Technopark Agadir, 4ème étage, Bureau TA403</p>
+        </div>
+
+        <div>
+          <p class="font-semibold text-white">Casablanca</p>
+          <p>FSJES Ben M'sik</p>
+          <p>Quartier Zénith, Sidi Maârouf</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div>
+      <p class="font-bold mb-4">Contact</p>
+
+      <div class="space-y-3 text-sm text-gray-300">
+
+        <!-- Email -->
+        <div class="flex items-center gap-3">
+          <svg class="w-4 h-4 text-[#F16E00]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M4 4h16v16H4z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          <span>orangedigitalcenter@orange.com</span>
+        </div>
+
+        <!-- Horaires -->
+        <div class="flex items-center gap-3">
+          <svg class="w-4 h-4 text-[#F16E00]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="9"></circle>
+            <polyline points="12,7 12,12 16,14"></polyline>
+          </svg>
+          <span>09h00 - 18h00</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Réseaux -->
+    <div>
+      <p class="font-bold mb-4">Réseaux sociaux</p>
+
+      <div class="flex gap-4">
+
+        <!-- LinkedIn -->
+        <a href="#" class="hover:scale-110 transition">
+          <svg class="w-5 h-5 text-white hover:text-[#F16E00]" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M4.98 3.5C4.98 4.88 3.87 6 2.49 6S0 4.88 0 3.5 1.11 1 2.49 1s2.49 1.12 2.49 2.5zM0 8h5v16H0zM7.5 8h4.8v2.2h.07c.67-1.27 2.3-2.6 4.73-2.6C22 7.6 24 10 24 14.2V24h-5v-8.5c0-2-.03-4.6-2.8-4.6-2.8 0-3.2 2.2-3.2 4.4V24h-5z"/>
+          </svg>
+        </a>
+
+        <!-- Facebook -->
+        <a href="#" class="hover:scale-110 transition">
+          <svg class="w-5 h-5 text-white hover:text-[#F16E00]" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M22 12A10 10 0 1 0 10.5 21.9v-6.9H8v-3h2.5V9.5c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.3c-1.3 0-1.7.8-1.7 1.6V12H17l-.4 3h-2.1v6.9A10 10 0 0 0 22 12"/>
+          </svg>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom -->
+  <div class="border-t border-gray-700 mt-10 pt-6 text-sm text-gray-400 text-center">
+    © 2026 Orange Digital Center — Tous droits réservés
+  </div>
+
+</footer>
+<script src="app.js"></script>
+</body>
+
+</html>
