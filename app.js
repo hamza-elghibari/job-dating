@@ -7,7 +7,7 @@
 
     // countdown
     const countdown = () => {
-      const target = new Date("April 17, 2026 09:00:00").getTime();
+      const target = new Date("April 14, 2026 09:00:00").getTime();
       const now = new Date().getTime();
       const diff = target - now;
       const days = Math.floor(diff / (1000 * 60 * 60 * 24));
