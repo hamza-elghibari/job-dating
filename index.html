@@ -9,7 +9,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-
+  <link rel="icon" type="image/png" href="favicon.png">
   <!-- Google Font alternative (Helvetica Neue not web safe) -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -33,16 +33,16 @@
       <div class="flex items-center gap-3">
         <img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Orange_logo.svg" class="h-10" />
         <div class="leading-tight">
-          <p class="font-bold">Orange</p>
-          <p class="font-bold">Digital Center</p>
+          <p class="font-bold text-sm">Orange</p>
+          <p class="font-bold text-sm">Digital Center</p>
         </div>
       </div>
 
       <div class="hidden md:flex gap-8 items-center">
-        <a href="#profiles" class="hover:text-[#F16E00] font-bold">Profils</a>
-        <a href="#process" class="hover:text-[#F16E00] font-bold">Processus</a>
-        <a href="#infos" class="hover:text-[#F16E00] font-bold">Infos</a>
-        <a href="#about" class="hover:text-[#F16E00] font-bold">À propos</a>
+        <a href="#profiles" class="hover:text-[#F16E00] text-sm font-bold">Profils</a>
+        <a href="#process" class="hover:text-[#F16E00] text-sm font-bold">Processus</a>
+        <a href="#infos" class="hover:text-[#F16E00] text-sm font-bold">Infos</a>
+        <a href="#about" class="hover:text-[#F16E00] text-sm font-bold">À propos</a>
       </div>
 
       <button id="menu-btn" class="md:hidden">
@@ -51,10 +51,10 @@
     </div>
 
     <div id="mobile-menu" class="hidden flex flex-col gap-4 mt-4 md:hidden">
-      <a href="#profiles" class="hover:text-[#F16E00] font-bold">Profils</a>
-      <a href="#process" class="hover:text-[#F16E00] font-bold">Processus</a>
-      <a href="#infos" class="hover:text-[#F16E00] font-bold">Infos</a>
-      <a href="#about" class="hover:text-[#F16E00] font-bold">À propos</a>
+      <a href="#profiles" class="hover:text-[#F16E00] text-sm font-bold">Profils</a>
+      <a href="#process" class="hover:text-[#F16E00] text-sm font-bold">Processus</a>
+      <a href="#infos" class="hover:text-[#F16E00] text-sm font-bold">Infos</a>
+      <a href="#about" class="hover:text-[#F16E00] text-sm font-bold">À propos</a>
     </div>
   </nav>
 
@@ -97,8 +97,8 @@
           Découvrir
         </button>
 
-        <a href="#" class="bg-[#F16E00] px-6 py-3 text-white font-bold hover:opacity-90 transition">
-          Participer au Job Dating
+        <a href="https://www.google.com" target="_blank" class="bg-[#F16E00] px-6 py-3 text-white font-bold hover:opacity-90 transition">
+          Participer 
         </a>
       </div>
     </div>
@@ -115,9 +115,7 @@
   <!-- POURQUOI -->
   <section class="px-6 md:px-16 py-20">
     <h2 class="text-2xl md:text-3xl font-bold mb-12 text-center" data-aos="fade-up">Pourquoi participer ?</h2>
-
     <div class="grid md:grid-cols-3 gap-8">
-
       <div class="border p-8 hover:bg-black hover:text-white hover:scale-105 transition duration-300"
         data-aos="fade-up">
         <h3 class="text-xl font-bold mb-3 text-[#F16E00]">Profils qualifiés</h3>
@@ -126,7 +124,6 @@
           et immédiatement opérationnels sur vos projets.
         </p>
       </div>
-
       <div class="border p-8 hover:bg-black hover:text-white hover:scale-105 transition duration-300" data-aos="fade-up"
         data-aos-delay="100">
         <h3 class="text-xl font-bold mb-3 text-[#F16E00]">Rencontre directe</h3>
@@ -135,9 +132,7 @@
           pour évaluer rapidement leur potentiel technique et humain.
         </p>
       </div>
-
-      <div class="border p-8 hover:bg-black hover:text-white hover:scale-105 transition duration-300" data-aos="fade-up"
-        data-aos-delay="200">
+      <div class="border p-8 hover:bg-black hover:text-white hover:scale-105 transition duration-300" data-aos="fade-up">
         <h3 class="text-xl font-bold mb-3 text-[#F16E00]">Recrutement rapide</h3>
         <p class="font-bold">
           Accélérez votre processus de recrutement en identifiant en une journée
@@ -164,7 +159,7 @@
         <p class="text-gray-600 font-bold ">Échangez avec des talents qualifiés.</p>
       </div>
 
-      <div class="p-6">
+      <div class="p-6" data-aos="fade-up">
         <p class="text-[#F16E00] text-4xl font-bold">03</p>
         <h3 class="font-bold text-xl">Recrutement</h3>
         <p class="text-gray-600 font-bold">Identifiez rapidement les meilleurs profils.</p>
@@ -330,7 +325,7 @@
           Réservez votre place dès maintenant et venez rencontrer nos talents en direct.
         </p>
 
-        <a href="https://www.google.com"
+        <a href="https://www.google.com" target="_blank"
           class="inline-block mt-4 bg-[#F16E00] text-white px-6 py-3 hover:scale-105 transition">
           Participer
         </a>
@@ -403,7 +398,7 @@
   <section id="about" class="bg-black text-white px-6 md:px-16 py-20" data-aos="fade-up">
     <h2 class="text-2xl md:text-3xl  font-bold mb-12 text-center" data-aos="fade-up">À propos</h2>
 
-    <p class="text-gray-300 leading-relaxed font-bold">
+    <p class="text-gray-300 leading-relaxed font-bold text-sm">
       Orange Digital Center est une initiative d’Orange Maroc dédiée à l’inclusion numérique et à l’employabilité des
       jeunes.
       À travers des formations intensives et des programmes innovants, le centre accompagne les talents vers les métiers
@@ -411,7 +406,7 @@
       en leur offrant des compétences techniques solides et une véritable expérience terrain.
     </p>
 
-    <p class="text-gray-300 leading-relaxed mt-6 font-bold">
+    <p class="text-gray-300 leading-relaxed mt-6 font-bold text-sm">
       Ce job dating s’inscrit dans une démarche post-formation, visant à créer un pont concret entre les entreprises et
       les développeurs formés.
       Il offre un espace de rencontre privilégié pour identifier des profils qualifiés, échanger directement avec les
@@ -419,55 +414,41 @@
       et accélérer les opportunités de recrutement.
     </p>
 
-    <p class="text-gray-300 leading-relaxed mt-6 font-bold">
+    <p class="text-gray-300 leading-relaxed mt-6 font-bold text-sm">
       Plus qu’un simple événement, il s’agit d’un véritable levier pour connecter les compétences aux besoins du marché
       et contribuer activement à l’écosystème numérique au Maroc.
     </p>
   </section>
   <!-- FOOTER -->
   <footer id="contact" class="bg-black text-white px-6 md:px-16 py-16">
-
     <div class="grid md:grid-cols-4 gap-10">
-
-      <!-- Logo + description -->
       <div>
         <p class="font-bold text-lg mb-3">Orange Digital Center</p>
         <p class="text-sm text-gray-400">
           Un réseau dédié à la formation et à l’accompagnement des talents du numérique au Maroc.
         </p>
       </div>
-
-      <!-- Adresses -->
       <div>
         <p class="font-bold mb-4">Nos centres</p>
-
         <div class="space-y-3 text-sm text-gray-300">
-
           <div>
             <p class="font-semibold text-white">Rabat</p>
             <p>Avenue Annakhil, Hay Riad, Rabat, Maroc</p>
           </div>
-
           <div>
             <p class="font-semibold text-white">Agadir</p>
             <p>Technopark Agadir, 4ème étage, Bureau TA403</p>
           </div>
-
           <div>
             <p class="font-semibold text-white">Casablanca</p>
             <p>FSJES Ben M'sik</p>
             <p>Quartier Zénith, Sidi Maârouf</p>
           </div>
-
         </div>
       </div>
-
-      <!-- Contact -->
       <div>
         <p class="font-bold mb-4">Contact</p>
-
         <div class="space-y-3 text-sm text-gray-300">
-
           <!-- Email -->
           <div class="flex items-center gap-3">
             <svg class="w-4 h-4 text-[#F16E00]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -476,7 +457,6 @@
             </svg>
             <span>orangedigitalcenter@orange.com</span>
           </div>
-
           <!-- Horaires -->
           <div class="flex items-center gap-3">
             <svg class="w-4 h-4 text-[#F16E00]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -485,16 +465,12 @@
             </svg>
             <span>09h00 - 18h00</span>
           </div>
-
         </div>
       </div>
-
       <!-- Réseaux -->
       <div>
         <p class="font-bold mb-4">Réseaux sociaux</p>
-
         <div class="flex gap-4">
-
           <!-- LinkedIn -->
           <a href="#" class="hover:scale-110 transition">
             <svg class="w-5 h-5 text-white hover:text-[#F16E00]" fill="currentColor" viewBox="0 0 24 24">
@@ -502,7 +478,6 @@
                 d="M4.98 3.5C4.98 4.88 3.87 6 2.49 6S0 4.88 0 3.5 1.11 1 2.49 1s2.49 1.12 2.49 2.5zM0 8h5v16H0zM7.5 8h4.8v2.2h.07c.67-1.27 2.3-2.6 4.73-2.6C22 7.6 24 10 24 14.2V24h-5v-8.5c0-2-.03-4.6-2.8-4.6-2.8 0-3.2 2.2-3.2 4.4V24h-5z" />
             </svg>
           </a>
-
           <!-- Facebook -->
           <a href="#" class="hover:scale-110 transition">
             <svg class="w-5 h-5 text-white hover:text-[#F16E00]" fill="currentColor" viewBox="0 0 24 24">
@@ -510,17 +485,13 @@
                 d="M22 12A10 10 0 1 0 10.5 21.9v-6.9H8v-3h2.5V9.5c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.3c-1.3 0-1.7.8-1.7 1.6V12H17l-.4 3h-2.1v6.9A10 10 0 0 0 22 12" />
             </svg>
           </a>
-
         </div>
       </div>
-
     </div>
-
     <!-- Bottom -->
     <div class="border-t border-gray-700 mt-10 pt-6 text-sm text-gray-400 text-center">
       © 2026 Orange Digital Center — Tous droits réservés
     </div>
-
   </footer>
   <script src="app.js"></script>
 </body>
